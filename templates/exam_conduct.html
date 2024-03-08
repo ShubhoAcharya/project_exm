@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Conduct - Online Exam System</title>
+    <link rel="stylesheet" href="../static/css/exam_conduct.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <span class="navbar-text">Online Exam System</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="question-container">
+            <div class="question" id="question">
+                {{ questions[0].question }} <!-- Display the first question -->
+            </div>
+            <div class="options" id="options">
+                {% for option in questions[0].options %}
+                    <label><input type="radio" name="answer" value="{{ option }}"> {{ option }}</label><br>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="buttons">
+        <button id="saveAndNextBtn">Save & Next</button>
+        <button id="clearResponsesBtn">Clear Responses</button>
+    </div>
+
+    <div class="timer">
+        <p>Time Remaining: <span id="timeRemaining">00:00</span></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../static/js/exam_conduct.js"></script>
+</body>
+</html>

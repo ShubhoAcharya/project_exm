@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Login - Online Exam System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="spacer"></div>
+            <span class="navbar-text">Online Exam System</span>
+            <div class="spacer"></div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="login-heading">
+            <h2>Candidate Login</h2>
+        </div>
+        <div class="login-form">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" class="form-control" placeholder="Enter Username">
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" class="form-control" placeholder="Enter Password">
+                <button id="togglePassword" type="button" onclick="togglePasswordVisibility()">
+                    <i id="passwordIcon" class="fa fa-eye"></i>
+                </button>
+            </div>
+            <div class="buttons">
+                <button onclick="login()" class="btn btn-primary">Login</button>
+                <button onclick="exit()" class="btn btn-danger">Exit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/js/styles.js"></script>
+</body>
+</html>

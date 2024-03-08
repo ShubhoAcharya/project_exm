@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Online Exam System</title>
+    <link rel="stylesheet" href="../static/css/welcome.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <span class="navbar-text">Online Exam System</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="welcome-heading">
+            <h2>Welcome</h2>
+        </div>
+        <div class="welcome-content">
+            <h3>Hello, <span id="username">{{ username }}</span>!</h3>
+            <p>Welcome to the Online Exam System. Get ready to take your exams!</p>
+            <button onclick="proceed()">Proceed to Select Exam Type</button>
+        </div>
+    </div>
+
+    <script>
+        function proceed() {
+            window.location.href = "/select_exam_type";
+        }
+    </script>
+</body>
+</html>

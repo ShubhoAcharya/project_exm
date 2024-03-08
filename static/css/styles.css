@@ -1,0 +1,86 @@
+/* Reset default margin and padding */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-text {
+    font-size: 24px;
+    color: #0056b3;
+    font-weight: bold; /* Make the font bold */
+}
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Login heading styling */
+.login-heading h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Login form styling */
+.login-form {
+    text-align: center;
+}
+
+/* Input group styling */
+.login-form .input-group {
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input styling */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Optional: Add margin-bottom to create space between buttons */
+.buttons button {
+    margin-bottom: 10px;
+}

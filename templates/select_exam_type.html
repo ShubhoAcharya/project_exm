@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Exam Type - Online Exam System</title>
+    <link rel="stylesheet" href="../static/css/select_exam_type.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <span class="navbar-text">Online Exam System</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="select-exam-heading">
+            <h2>Select Exam Type</h2>
+        </div>
+        <div class="select-exam-options">
+            <label><input type="radio" name="examType" value="math" id="math"> Math</label>
+            <label><input type="radio" name="examType" value="science" id="science"> Science</label>
+            <label><input type="radio" name="examType" value="history" id="history"> History</label>
+            <!-- Add more options as needed -->
+            <button id="startExamBtn">Start Exam</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../static/js/select_exam_type.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* Reset default margin and padding */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.navbar .container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+}
+
+.navbar-text {
+    margin: 0;
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome heading styling */
+.welcome-heading h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Welcome content styling */
+.welcome-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for Online Exam System text */
+.welcome-content h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Optional: Add margin-bottom to create space between buttons */
+.buttons button {
+    margin-bottom: 10px;
+}
