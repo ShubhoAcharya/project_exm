@@ -1,8 +1,8 @@
 /* Reset default margin and padding */
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* Navbar styling */
@@ -14,17 +14,13 @@
 
 .navbar .container {
     display: flex;
-    justify-content: center; /* Center the items horizontally */
-    align-items: center; /* Center the items vertically */
+    justify-content: space-between;
 }
 
 .navbar-text {
     font-size: 24px;
     color: #0056b3;
-}
-
-.spacer {
-    flex-grow: 1;
+    font-weight: bold; /* Make the font bold */
 }
 
 /* Container styling */
@@ -37,31 +33,26 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.select-exam-heading h2 {
+/* Header styling */
+header h1 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.select-exam-options {
-    text-align: center;
+/* Main styling */
+main {
+    text-align: left; /* Align text to the left */
 }
 
-/* Select box styling */
-select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+/* Section styling */
+section {
+    margin-bottom: 20px; /* Add space between sections */
 }
 
 /* Button styling */
-.proceed-button {
-    text-align: center;
-    margin-top: 20px;
-}
-
-button {
+.start-exam button {
+    display: block;
+    margin: 20px auto; /* Center the button */
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
@@ -71,6 +62,11 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.start-exam button:hover {
     background-color: #0056b3;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
 }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Page - Online Exam System</title>
+    <link rel="stylesheet" href="../static/css/result_page.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <span class="navbar-text">Online Exam System</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="result-container">
+            <h2>Result</h2>
+            <p>Exam Type: {{ exam_type }}</p>
+            <p>Attempted Questions: {{ attempted_questions }}</p>
+            <p>Unattempted Questions: {{ total_questions - attempted_questions }}</p>
+            <p>Correct Answers: {{ correct_answers }}</p>
+            <p>Incorrect Answers: {{ incorrect_answers }}</p>
+            <p>Total Marks: {{ total_marks }}</p>
+            <button id="BacktoHome">Back To Home</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../static/js/result_page.js"></script>
+</body>
+</html>

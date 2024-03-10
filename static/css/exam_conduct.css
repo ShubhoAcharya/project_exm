@@ -34,8 +34,17 @@
 }
 
 /* Question styling */
-.question h3 {
-    margin-bottom: 10px;
+.question {
+    position: relative;
+    padding-right: 160px; /* Adjust according to the length of the marking scheme */
+}
+
+.marking-scheme {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: #666;
 }
 
 /* Options styling */

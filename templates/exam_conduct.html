@@ -16,19 +16,19 @@
     <div class="container">
         <div id="question-container">
             <div class="question" id="question">
-                {{ questions[0].question }} <!-- Display the first question -->
+                <p class="marking-scheme">Correct Answer: +1, Incorrect Answer: -0.25</p>
+                <!-- Question content will be dynamically loaded here -->
             </div>
             <div class="options" id="options">
-                {% for option in questions[0].options %}
-                    <label><input type="radio" name="answer" value="{{ option }}"> {{ option }}</label><br>
-                {% endfor %}
+                <!-- Options will be dynamically loaded here -->
             </div>
         </div>
     </div>
-    
 
     <div class="buttons">
-        <button id="saveAndNextBtn">Save & Next</button>
+        <button id="backBtn" style="background-color: yellow; color: black;">Back</button>
+        <button id="submitBtn" style="background-color: green; color: white;">Submit</button>
+        <button id="saveAndNextBtn" style="background-color: blue; color: white;">Save & Next</button>
         <button id="clearResponsesBtn">Clear Responses</button>
     </div>
 

@@ -23,10 +23,6 @@
     color: #0056b3;
 }
 
-.spacer {
-    flex-grow: 1;
-}
-
 /* Container styling */
 .container {
     max-width: 800px;
@@ -37,31 +33,17 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.select-exam-heading h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.select-exam-options {
-    text-align: center;
-}
-
-/* Select box styling */
-select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-/* Button styling */
-.proceed-button {
+/* Result container styling */
+.result-container {
     text-align: center;
     margin-top: 20px;
 }
 
-button {
+.result-container h2 {
+    margin-bottom: 10px;
+}
+
+.result-container button {
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
@@ -71,6 +53,6 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.result-container button:hover {
     background-color: #0056b3;
 }

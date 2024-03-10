@@ -14,10 +14,9 @@ function login() {
 
 // Function to handle exiting
 function exit() {
-    if (confirm("Are you sure you want to exit?")) {
-        window.close();
-    }
+    window.location.href = "/";
 }
+
 
 // Function to toggle password visibility with eye icon
 function togglePasswordVisibility() {

@@ -1,8 +1,8 @@
 /* Reset default margin and padding */
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* Navbar styling */
@@ -14,17 +14,13 @@
 
 .navbar .container {
     display: flex;
-    justify-content: center; /* Center the items horizontally */
-    align-items: center; /* Center the items vertically */
+    justify-content: space-between;
 }
 
 .navbar-text {
     font-size: 24px;
     color: #0056b3;
-}
-
-.spacer {
-    flex-grow: 1;
+    font-weight: bold;
 }
 
 /* Container styling */
@@ -35,32 +31,19 @@
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.select-exam-heading h2 {
+/* Login heading styling */
+.login-heading h2 {
     text-align: center;
     margin-bottom: 20px;
-}
-
-.select-exam-options {
-    text-align: center;
-}
-
-/* Select box styling */
-select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
 }
 
 /* Button styling */
-.proceed-button {
-    text-align: center;
-    margin-top: 20px;
-}
-
 button {
     padding: 10px 20px;
     background-color: #007bff;
@@ -69,6 +52,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-bottom: 10px;
 }
 
 button:hover {
